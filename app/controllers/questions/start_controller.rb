@@ -14,6 +14,8 @@ module Questions
         )
       end
 
+      store_form_in_session!
+
       return redirect_to emergency_contact_path if @form.priority_repair?
 
       render :submit
@@ -23,6 +25,12 @@ module Questions
 
     def start_form_params
       params.require(:start_form).permit!
+    end
+
+    def store_form_in_session!
+      SelectedAnswerStore
+        .new(session)
+        .store_selected_answers(:priority_repair, @form.priority_repair)
     end
   end
 end
