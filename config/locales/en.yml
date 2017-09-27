@@ -31,4 +31,8 @@ en:
           'dripping_tap': 'Dripping tap'
           'damaged_door': 'Door is damaged, loose, stiff or stuck'
           'something_else': 'Something else'
+      door_material_form:
+        door_material:
+          'wood': 'Wood'
+          'metal': 'Metal'
 

@@ -9,6 +9,9 @@ Rails.application.routes.draw do
 
     get '/repair-type', to: 'repair_type#index', as: 'repair_type'
     post '/repair-type', to: 'repair_type#submit', as: 'repair_type_submit'
+
+    get '/door-material', to: 'door_material#index', as: 'door_material'
+    post '/door-material', to: 'door_material#submit', as: 'door_material_submit'
   end
 
   get '/emergency-contact',

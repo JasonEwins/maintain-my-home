@@ -1,0 +1,8 @@
+= simple_form_for @form, url: questions_door_material_submit_path do |f|
+  %fieldset
+    %legend.question
+      %h1 What is the door made of?
+
+    .answers
+      = f.input :door_material, collection: [:wood, :metal], as: :radio_buttons, label: ''
+      = f.button :submit, class: 'button'
