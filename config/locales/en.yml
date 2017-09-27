@@ -22,7 +22,7 @@ en:
       start_form:
         priority_repair:
           'yes': 'Yes'
-          'no': 'No'
+          'no': "No, it's something else"
       repair_type_form:
         repair_type:
           'blocked_bath': 'Blocked bath'
