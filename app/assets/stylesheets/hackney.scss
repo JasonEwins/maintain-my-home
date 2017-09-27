@@ -47,14 +47,14 @@ main {
   }
 
   h1 {
-    @include heading-48;
+    @include heading-36;
 
     color: $hackney-green;
     font-weight: bold;
   }
 
   h2 {
-    @include heading-36;
+    @include heading-24;
   }
 
   ul {
