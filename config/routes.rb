@@ -18,6 +18,9 @@ Rails.application.routes.draw do
 
     get '/bath-rising', to: 'bath_water_rising#index', as: 'bath_water_rising'
     post '/bath-rising', to: 'bath_water_rising#submit', as: 'bath_water_rising_submit'
+
+    get '/describe-repair', to: 'describe_repair#index', as: 'describe_repair'
+    post '/describe-repair', to: 'describe_repair#submit', as: 'describe_repair_submit'
   end
 
   get '/emergency-contact',

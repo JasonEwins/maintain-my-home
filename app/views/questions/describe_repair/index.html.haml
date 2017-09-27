@@ -1,0 +1,14 @@
+= simple_form_for @form, url: questions_describe_repair_submit_path do |f|
+  %fieldset
+    %legend.question
+      %h1 Please describe what needs to be fixed
+
+      %p Please include details such as:
+
+      %ul
+        %li Which rooms are affected?
+        %li How does it impact your household?
+
+    .answers
+      = f.input :repair_description, as: :text
+      = f.button :submit, class: 'button'

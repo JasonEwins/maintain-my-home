@@ -12,7 +12,7 @@ class AddressesController < ApplicationController
 
     SelectedAnswerStore.new(session).store_selected_answers('address', address)
 
-    redirect_to new_appointment_path
+    redirect_to questions_describe_repair_path
   end
 
   private
