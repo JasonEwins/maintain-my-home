@@ -16,12 +16,7 @@ module Questions
 
       store_form_in_session!
 
-      case @form.door_material
-      when 'wood'
-        render body: 'wood - Not currently implemented'
-      else
-        render body: 'Not currently implemented'
-      end
+      redirect_to questions_door_location_path
     end
 
     private

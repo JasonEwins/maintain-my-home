@@ -35,4 +35,11 @@ en:
         door_material:
           'wood': 'Wood'
           'metal': 'Metal'
+      door_location_form:
+        door_location:
+          'interior': 'Inside my home'
+          'exterior': 'The entrance to my home'
+          'communal': 'An entrance shared with other tenants'
+
+
 

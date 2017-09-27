@@ -1,0 +1,8 @@
+= simple_form_for @form, url: questions_door_location_submit_path do |f|
+  %fieldset
+    %legend.question
+      %h1 Where is the door located?
+
+    .answers
+      = f.input :door_location, collection: [:interior, :exterior, :communal], as: :radio_buttons, label: ''
+      = f.button :submit, class: 'button'
