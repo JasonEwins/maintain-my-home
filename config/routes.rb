@@ -15,6 +15,9 @@ Rails.application.routes.draw do
 
     get '/door-location', to: 'door_location#index', as: 'door_location'
     post '/door-location', to: 'door_location#submit', as: 'door_location_submit'
+
+    get '/bath-rising', to: 'bath_water_rising#index', as: 'bath_water_rising'
+    post '/bath-rising', to: 'bath_water_rising#submit', as: 'bath_water_rising_submit'
   end
 
   get '/emergency-contact',

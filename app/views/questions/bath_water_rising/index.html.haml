@@ -1,0 +1,8 @@
+= simple_form_for @form, url: questions_bath_water_rising_submit_path do |f|
+  %fieldset
+    %legend.question
+      %h1 Is the water rising?
+
+    .answers
+      = f.input :bath_water_rising, collection: [:yes, :no], as: :radio_buttons, label: ''
+      = f.button :submit, class: 'button'

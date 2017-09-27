@@ -40,6 +40,11 @@ en:
           'interior': 'Inside my home'
           'exterior': 'The entrance to my home'
           'communal': 'An entrance shared with other tenants'
+      bath_water_rising_form:
+        bath_water_rising:
+          'yes': 'Yes, the water is rising'
+          'no': 'No, the water is not rising'
+
 
 
 

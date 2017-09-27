@@ -19,6 +19,8 @@ module Questions
       case @form.repair_type
       when 'damaged_door'
         redirect_to questions_door_material_path
+      when 'blocked_bath'
+        redirect_to questions_bath_water_rising_path
       else
         render body: 'Not currently implemented'
       end
