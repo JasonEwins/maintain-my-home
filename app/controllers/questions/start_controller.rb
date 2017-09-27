@@ -17,8 +17,7 @@ module Questions
       store_form_in_session!
 
       return redirect_to emergency_contact_path if @form.priority_repair?
-
-      render :submit
+      redirect_to questions_repair_type_path
     end
 
     private

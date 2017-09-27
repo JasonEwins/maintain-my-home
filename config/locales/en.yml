@@ -23,3 +23,12 @@ en:
         priority_repair:
           'yes': 'Yes'
           'no': 'No'
+      repair_type_form:
+        repair_type:
+          'blocked_bath': 'Blocked bath'
+          'blocked_toilet': 'Blocked toilet'
+          'blocked_sink': 'Blocked sink'
+          'dripping_tap': 'Dripping tap'
+          'damaged_door': 'Door is damaged, loose, stiff or stuck'
+          'something_else': 'Something else'
+

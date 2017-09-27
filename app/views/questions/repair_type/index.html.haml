@@ -1,0 +1,8 @@
+= simple_form_for @form, url: questions_repair_type_submit_path do |f|
+  %fieldset
+    %legend.question
+      %h1 What do you need to be fixed?
+
+    .answers
+      = f.input :repair_type, collection: [:blocked_bath, :blocked_toilet, :blocked_sink, :dripping_tap, :damaged_door, :something_else], as: :radio_buttons, label: ''
+      = f.button :submit, class: 'button'
