@@ -2,6 +2,11 @@
   = @address_search.errors.full_messages.join(', ')
 
 = simple_form_for @address_search, url: address_search_path do |f|
-  = f.input :postcode
-  = f.button :submit
+  %fieldset
+    %legend.question
+      %h1 What is your address?
+
+      .answers
+        = f.input :postcode
+        = f.button :submit, class: 'button'
 

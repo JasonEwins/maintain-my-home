@@ -2,15 +2,17 @@
   = @address_search.errors.full_messages.join(', ')
 
 %p
-  = @address_search.postcode
+  = @address_search.postcode.upcase
   = link_to t('address_search.change'), new_address_search_path
 
 - if @address_search_results
   #address-search-results
     - if @address_search_results.any?
       = simple_form_for @address, url: address_path do |f|
-        = f.collection_radio_buttons :property_reference, @address_search_results, :property_reference, :short_address
-        = f.button :submit
+        %fieldset
+          .answers
+            = f.collection_radio_buttons :property_reference, @address_search_results, :property_reference, :short_address
+            = f.button :submit, class: 'button'
     - else
       = t('address_search.not_found')
 
