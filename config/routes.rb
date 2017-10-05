@@ -29,5 +29,8 @@ Rails.application.routes.draw do
   get '/contact-details', to: 'contact_details#index', as: 'contact_details'
   post '/contact-details', to: 'contact_details#submit'
 
+  get '/diagnosis/:step', to: 'diagnosis#show', as: 'diagnosis'
+  post '/diagnosis/:step', to: 'diagnosis#submit'
+
   root to: 'start#index'
 end
