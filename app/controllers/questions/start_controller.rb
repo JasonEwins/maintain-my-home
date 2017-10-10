@@ -10,7 +10,7 @@ module Questions
       return render :index unless @form.valid?
       return redirect_to page_path('emergency_contact') if @form.priority_repair?
 
-      redirect_to describe_repair_path
+      redirect_to questions_path('location')
     end
 
     private
