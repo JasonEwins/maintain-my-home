@@ -16,6 +16,8 @@ class Question
 
     if answer_hash.key?('goto')
       Rails.application.routes.url_helpers.questions_path(answer_hash['goto'])
+    elsif answer_hash.key?('page')
+      Rails.application.routes.url_helpers.page_path(answer_hash['page'])
     else
       Rails.application.routes.url_helpers.address_search_path
     end
