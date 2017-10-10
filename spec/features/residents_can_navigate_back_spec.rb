@@ -102,7 +102,7 @@ RSpec.feature 'Resident can navigate back' do
     choose_radio_button 'Yes'
     click_on 'Continue'
 
-    click_on t('back_links.questions/start')
+    click_on t('back_links.previous')
     expect(page).to have_content 'Is your problem one of these?'
   end
 
