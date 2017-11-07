@@ -21,7 +21,7 @@ describe_communal_problem:
     - text: The intercom is not working for my property
     - text: The lift is faulty
     - text: There are pests or rodents
-    - text: There is a blocked drain or gully
+    - text: There is a blocked or overflowing drain
     - text: The rubbish chute is blocked or damaged
     - text: Something else
 
@@ -36,8 +36,8 @@ faulty_lamp_post:
 describe_outside_problem:
   question: What is the problem outside your home?
   answers:
-    - text: The guttering or downpipe is blocked or damaged
-    - text: A drain is blocked
+    - text: The guttering or downpipe is overflowing or damaged
+    - text: A drain is blocked or overflowing
     - text: Paving is broken or coming loose
     - text: The roof is leaking
     - text: A light is not working
